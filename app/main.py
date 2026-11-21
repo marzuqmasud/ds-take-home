@@ -59,12 +59,85 @@ class Audit(Model):
     opinion: str
 
 
+class Statements(Model):
+    revenue: int
+    cost_of_sales: int
+    gross_profit: int
+    operating_expenses: int
+    operating_profit: int
+    depreciation: int
+    interest_expense: int
+    profit_before_tax: int
+    tax_expense: int
+    profit_after_tax: int
+    cash: int
+    trade_receivables: int
+    inventory: int
+    current_assets: int
+    non_current_assets: int
+    total_assets: int
+    trade_payables: int
+    borrowings: int
+    current_liabilities: int
+    total_liabilities: int
+    total_equity: int
+    operating_cash_flow: int
+    capital_expenditure: int
+    borrowings_repaid: int
+
+
+class Profitability(Model):
+    gross_profit_margin: float
+    operating_profit_margin: float
+    ebitda: int
+    ebitda_margin: float
+    operating_expense_ratio: float
+    net_profit_margin: float
+    tax_efficiency_ratio: float | None
+
+
+class LiquidityAndCashFlow(Model):
+    quick_ratio: float
+    cash_ratio: float
+    cash_to_revenue_ratio: float
+    operating_cash_flow: int
+    operating_cash_flow_margin: float
+    free_cash_flow: int
+    accrual_ratio: float
+
+
+class OperationalEfficiency(Model):
+    cash_conversion_cycle: float
+    days_sales_outstanding: float
+    days_inventory_outstanding: float | None
+    days_payables_outstanding: float
+    inventory_turnover: float | None
+    receivables_turnover: float
+    asset_turnover_ratio: float
+    net_working_capital: int
+
+
+class CapitalStructure(Model):
+    leverage_ratio: float
+    interest_coverage_ratio: float
+    fixed_asset_composition: float
+    depreciation_to_asset_ratio: float
+    debt_service_coverage_ratio: float
+
+
+class RatiosAndMetrics(Model):
+    profitability: Profitability
+    liquidity_and_cash_flow: LiquidityAndCashFlow
+    operational_efficiency: OperationalEfficiency
+    capital_structure: CapitalStructure
+
+
 class FinancialYear(Model):
     financial_year: int
     financial_year_end: str
     audit: Audit
-    statements: dict[str, int]
-    ratios_and_metrics: dict[str, dict[str, float | None]]
+    statements: Statements
+    ratios_and_metrics: RatiosAndMetrics
 
 
 class Financials(Model):
@@ -115,7 +188,15 @@ app = FastAPI(title="Company summaries viewer")
 
 def load_companies() -> list[Company]:
     lines = COMPANIES.read_text(encoding="utf-8").splitlines()
-    return [Company.model_validate_json(line) for line in lines if line.strip()]
+    companies: list[Company] = []
+    for number, line in enumerate(lines, start=1):
+        if not line.strip():
+            continue
+        try:
+            companies.append(Company.model_validate_json(line, strict=True, extra="forbid", by_name=False))
+        except ValidationError as exc:
+            raise ValueError(f"{COMPANIES}:{number}\n{exc}") from exc
+    return companies
 
 
 @app.get("/api/companies")
