@@ -5,6 +5,8 @@ description = "Build, experiment with and evaluate a system that summarises comp
 requires-python = ">=3.14,<3.15"
 dependencies = [
   "fastapi",
+  "openrouter>=1.3.202",
+  "pandas>=3.1.1",
   "pydantic",
   "uvicorn",
 ]
