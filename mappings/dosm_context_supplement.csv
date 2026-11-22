@@ -1,0 +1,6 @@
+normalized_activity,applied_msic_2008,code_role,summary_use,match_level,published_scope,dataset,dosm_key,value_field,screening_note
+Travel agency and tourism,79110,primary,lead,thematic_proxy,National inbound tourism,tourism_satellite_account_2024,inbound_tourism_expenditure,value,"National inbound spending covers many products. The company also handles outbound umrah travel, and its revenue split is unavailable."
+Travel agency and tourism,79110,primary,support,msic_section,Administrative and support services,services_subsector,N,revenue,"Section N includes other activities beyond travel agencies."
+Travel agency and tourism,79110,primary,support,msic_section,Administrative and support services,services_subsector,N,employees,"Annual average of quarterly persons engaged across Section N, which includes other activities beyond travel agencies."
+Travel agency and tourism,79110,primary,support,msic_composite,"Professional, administrative and support services",services_volume_subsector,M_N,volume,"The published composite combines Sections M and N and does not isolate travel agencies."
+Boutique hotel,55101,primary,support,thematic_proxy,National inbound tourism,tourism_satellite_account_2024,inbound_tourism_expenditure,value,"National inbound visitor spending includes many products and locations. It does not measure this hotel's demand, occupancy or revenue."
