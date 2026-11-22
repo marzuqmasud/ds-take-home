@@ -29,7 +29,7 @@ METRICS = [
 IDENTIFIERS = ["registrationNumber", "companyName", "financialYear", "financialYearEnd"]
 
 
-def ratio(numerator, denominator):
+def ratio(numerator: pd.Series, denominator: pd.Series) -> pd.Series:
     return numerator / denominator.where(denominator.ne(0))
 
 
@@ -50,7 +50,7 @@ TREND_THRESHOLDS = {
 }
 
 
-def add_trends(result):
+def add_trends(result: pd.DataFrame) -> pd.DataFrame:
     companies = result["registrationNumber"]
     grouped = result.groupby(companies, sort=False)
     end = pd.to_datetime(result["financialYearEnd"])
@@ -77,7 +77,8 @@ def add_trends(result):
         "operatingCashFlowMargin": "operatingCashFlowMarginChange",
         "freeCashFlow": "freeCashFlowChange",
         "currentRatio": "currentRatioChange",
-        "debtServiceCoverageRatio": "dscrChange"}.items():
+        "debtServiceCoverageRatio": "dscrChange",
+    }.items():
         result[change] = grouped[metric].diff()
 
     comparable_profit = profit.notna() & prior_profit.notna()
@@ -95,18 +96,18 @@ def add_trends(result):
     return result
 
 
-def historical_summary(years):
+def historical_summary(years: pd.DataFrame) -> dict[str, int | bool | str]:
     losses = years["profitAfterTax"].lt(0)
 
-    def longest_loss_run(breaks):
+    def longest_loss_run(breaks: pd.Series) -> int:
         return int(losses.groupby(breaks.cumsum()).cumsum().max()) if len(losses) else 0
 
     negative_ocf = int(years["operatingCashFlow"].lt(0).sum())
     thresholds = pd.Series(TREND_THRESHOLDS)
 
     changes = years[thresholds.index]
-    improved = changes.ge(thresholds).any().any() or years["profitabilityTurnaround"].any()
-    declined = changes.le(-thresholds).any().any() or years["profitTurnedNegative"].any()
+    improved = bool(changes.ge(thresholds).any().any() or years["profitabilityTurnaround"].any())
+    declined = bool(changes.le(-thresholds).any().any() or years["profitTurnedNegative"].any())
     trend = "Insufficient Data"
 
     if improved or declined or changes.notna().any().any():
@@ -123,8 +124,8 @@ def historical_summary(years):
         for matches, label in [
             (score_changes.gt(0), "Increasing"),
             (score_changes.lt(0), "Decreasing"),
-            (score_changes.eq(0), "Stable")]:
-
+            (score_changes.eq(0), "Stable"),
+        ]:
             if matches.all():
                 direction = label
                 break
@@ -140,7 +141,7 @@ def historical_summary(years):
     }
 
 
-def add_x_score(result):
+def add_x_score(result: pd.DataFrame) -> pd.DataFrame:
     inputs = result[list(X_SCORE_COEFFICIENTS)]
     weighted = inputs.mul(pd.Series(X_SCORE_COEFFICIENTS))
     score = X_SCORE_INTERCEPT + weighted.sum(axis=1, min_count=len(X_SCORE_COEFFICIENTS))
@@ -152,7 +153,7 @@ def add_x_score(result):
     return result
 
 
-def annual_calculations(companies):
+def annual_calculations(companies: pd.DataFrame) -> pd.DataFrame:
     if "financials.years" not in companies:
         return add_x_score(
             add_trends(pd.DataFrame(columns=[*IDENTIFIERS, *METRICS, "revenue", "profitAfterTax", "operatingCashFlow"]))
@@ -160,9 +161,9 @@ def annual_calculations(companies):
 
     years = companies.reindex(columns=["registrationNumber", "profile.companyName", "financials.years"])
     years = years.explode("financials.years").dropna(subset=["financials.years"]).reset_index(drop=True)
-    periods = pd.json_normalize(years["financials.years"])
+    periods = pd.json_normalize(years["financials.years"].tolist())
 
-    def amount(field):
+    def amount(field: str) -> pd.Series:
         return pd.to_numeric(periods.get(f"statements.{field}", pd.Series(index=years.index, dtype=float)))
 
     revenue = amount("revenue")
