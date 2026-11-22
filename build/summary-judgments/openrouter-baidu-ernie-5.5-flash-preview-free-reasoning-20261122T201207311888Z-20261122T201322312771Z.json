@@ -1,0 +1,378 @@
+{
+  "summaryVersion": "openrouter-baidu-ernie-5.5-flash-preview-free-reasoning-20261122T201207311888Z.jsonl",
+  "judgeModel": "baidu/ernie-5.5-flash-preview:free",
+  "reasoningRequested": true,
+  "judgments": [
+    {
+      "registrationNumber": "SYN-000029",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 144,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000067",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 133,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000148",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 138,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000165",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 141,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000217",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 137,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000267",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 138,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000282",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 135,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000286",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000302",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 117,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000333",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 118,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000381",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 135,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000397",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 135,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000451",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 132,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000476",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 139,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000510",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 135,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000511",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 131,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000545",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000546",
+      "findings": [
+        {
+          "severity": "minor",
+          "claim": "Operating and free cash flow turned positive in FY2024",
+          "evidence": "Source financials: FY2023 operatingCashFlow = 3,106,563 (positive) while FY2023 freeCashFlow = -7,265,633 (negative); FY2022 operatingCashFlow = -25,292,070. Backend FY2023 operatingCashFlowChange = +28,398,633.",
+          "correction": "Operating cash flow turned positive in FY2023, not FY2024. Only free cash flow turned positive in FY2024."
+        }
+      ],
+      "factualScore": 1,
+      "wordCount": 130,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000640",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 131,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000657",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000674",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 133,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000677",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 135,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000783",
+      "findings": [
+        {
+          "severity": "minor",
+          "claim": "Operating and free cash flow turned positive in FY2024",
+          "evidence": "Source financials: FY2023 operatingCashFlow = 1,200,155 (positive) while FY2023 freeCashFlow = -193,277 (negative); FY2022 operatingCashFlow = -2,682,124.",
+          "correction": "Operating cash flow turned positive in FY2023, not FY2024. Only free cash flow turned positive in FY2024."
+        }
+      ],
+      "factualScore": 1,
+      "wordCount": 126,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000785",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 131,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000802",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 132,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000923",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 130,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001070",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 133,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001085",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 131,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001102",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 130,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001158",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 139,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001199",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 128,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001203",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 124,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001212",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 131,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001253",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 128,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001294",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 132,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001298",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 130,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001355",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 132,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001389",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 127,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001455",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 131,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001457",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 130,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001472",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 128,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001529",
+      "findings": [
+        {
+          "severity": "minor",
+          "claim": "Operating and free cash flow turned positive in FY2024",
+          "evidence": "Source financials: FY2023 operatingCashFlow = 364,569 (positive) while FY2023 freeCashFlow = -30,104 (negative); FY2022 operatingCashFlow = -58,688.",
+          "correction": "Operating cash flow turned positive in FY2023, not FY2024. Only free cash flow turned positive in FY2024."
+        }
+      ],
+      "factualScore": 1,
+      "wordCount": 134,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001560",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001569",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 133,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001618",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 134,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001645",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 133,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001829",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 133,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001894",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 132,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001969",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 134,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001970",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    }
+  ]
+}

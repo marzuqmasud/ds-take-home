@@ -1,0 +1,378 @@
+{
+  "summaryVersion": "openrouter-baidu-ernie-5.5-flash-preview-free-reasoning-20261121T192931663255Z.jsonl",
+  "judgeModel": "baidu/ernie-5.5-flash-preview:free",
+  "reasoningRequested": true,
+  "judgments": [
+    {
+      "registrationNumber": "SYN-000029",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 146,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000067",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 141,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000148",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 138,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000165",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000217",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 138,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000267",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000282",
+      "findings": [
+        {
+          "severity": "minor",
+          "claim": "Revenue grew about 6% in FY2023 and about 4% in FY2024.",
+          "evidence": "FY2024 revenue rose from MYR 26,622,433 (FY2023) to MYR 27,546,638, growth of 3.47% (backend revenueGrowthPct 3.47), which rounds to about 3%.",
+          "correction": "FY2024 revenue growth was about 3%, not about 4%."
+        }
+      ],
+      "factualScore": 1,
+      "wordCount": 123,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000286",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 149,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000302",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 121,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000333",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 119,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000381",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 119,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000397",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 134,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000451",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 143,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000476",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 129,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000510",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 138,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000511",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 130,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000545",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000546",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000640",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 128,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000657",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 142,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000674",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 125,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000677",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 121,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000783",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 122,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000785",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 137,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000802",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 131,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-000923",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 137,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001070",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 123,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001085",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 116,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001102",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 122,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001158",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001199",
+      "findings": [
+        {
+          "severity": "material",
+          "claim": "Free cash flow has stayed negative despite the profit turnaround, so cash generation lags earnings.",
+          "evidence": "In FY2024 (year ended 2024-03-31) operating cash flow was MYR 599,176 versus profit after tax of MYR 491,443 (backend cashConversionOfProfit 1.22); free cash flow of -27,752 was negative only after capital expenditure of MYR 626,928.",
+          "correction": "Operating cash flow exceeded profit after tax in FY2024, so operating cash generation did not lag earnings; the negative free cash flow resulted from capital expenditure, not weak operating cash conversion."
+        }
+      ],
+      "factualScore": 0,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001203",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 125,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001212",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 140,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001253",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 109,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001294",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 130,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001298",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 143,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001355",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 133,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001389",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 130,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001455",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 131,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001457",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 129,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001472",
+      "findings": [
+        {
+          "severity": "minor",
+          "claim": "Revenue grew about 35% in FY2023 and about 38% in FY2024.",
+          "evidence": "FY2024 revenue rose from MYR 8,282,936 to MYR 11,475,475, growth of 38.54% (backend revenueGrowthPct 38.54), which rounds to about 39%.",
+          "correction": "FY2024 revenue growth was about 39%, not about 38%."
+        }
+      ],
+      "factualScore": 1,
+      "wordCount": 131,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001529",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001560",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 145,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001569",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 137,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001618",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 143,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001645",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 123,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001829",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 136,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001894",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 131,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001969",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 115,
+      "withinWordTarget": true
+    },
+    {
+      "registrationNumber": "SYN-001970",
+      "findings": [],
+      "factualScore": 2,
+      "wordCount": 129,
+      "withinWordTarget": true
+    }
+  ]
+}
